@@ -6,6 +6,8 @@ class Api::PokemonController < ApplicationController
     end
 
     def show 
+        @move = Move.find(params[:id])
+        @item = Item.find(params[:id])
         @pokemon = Pokemon.find(params[:id])
         render :show
     end
