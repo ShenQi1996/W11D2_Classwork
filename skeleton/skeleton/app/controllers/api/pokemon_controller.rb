@@ -10,3 +10,4 @@ class Api::PokemonController < ApplicationController
         render :show
     end
 end
+ 
